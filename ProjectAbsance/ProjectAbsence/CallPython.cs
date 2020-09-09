@@ -107,11 +107,13 @@ namespace ProjectAbsence
 
         string ApplyChanges()
         {
+            /*
             if (pyVar.person.Count > 0)
             {
                 string test = Python.Call(pyPath, exePath, pyVar);
                 return test;
             }
+            */
             return "";
         }
 

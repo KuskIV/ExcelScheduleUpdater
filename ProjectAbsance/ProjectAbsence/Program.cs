@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace ProjectAbsence
@@ -18,7 +19,8 @@ namespace ProjectAbsence
 
             #region Paths (unique)
             string url = $"https://www.moodle.aau.dk/calmoodle/public/?sid={schemeId}&startdate={startDate}";
-            string file = @"C:\Users\madsh\OneDrive\Universitetet\Github Projects\AbsenceFile\scheme.txt";
+            string file; //= @"C:\Users\madsh\OneDrive\Universitetet\Github Projects\AbsenceFile\scheme.txt";
+            file = Path.GetFullPath("semester5schedule.txt");
             string python = @"C:\Users\madsh\OneDrive\Universitetet\Github Projects\pyExcel\Main.py";
             string exePath = @"C:\Users\madsh\AppData\Local\Programs\Python\Python38-32\python.exe";
             #endregion
